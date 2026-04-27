@@ -8,18 +8,27 @@ function App() {
       <h1 className="text-5xl ">Carrizo Ham Thiago</h1>
     </div>
     {/*seccion1 */}
-    <div className="w-[90%] ml-[5%] mr-[5%] flex flex-col md:flex-row">
+    <div className="w-[90%] ml-[5%] mr-[5%] mt-[20px] mb-[20px] flex flex-col md:flex-row ">
       {/*seccion1 izquierda */}
       <div className="w-[100%] md:w-[80%]">
         <h1 className="text-4xl">Estudios</h1>
           <p className="text-3xl">Soy estudiante de último año en E.E.S.T N°7 "Jose Hernandez"
-            , dentro de la modalidad de programación.<br>
-            </br> <br></br><br />A la vez me encuentro cursando 7mo año de inglés en lenguas vivas.</p>
+            , dentro de la modalidad de programación.<br />
+            <br /><br />A la vez me encuentro cursando 7mo año de inglés en lenguas vivas.</p>
       </div>
       {/*seccion1 derecha */}
       <div className="w-[100%] md:w-[20%] flex items-center justify-center">
         {/*en la foto salgo matado por que en ese 15 estaba re engripado */}
         <img className="w-[300px] h-[300px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-full" src="/fotondacv.jpg" />    
+      </div>
+    </div>
+    {/*seccion2 */}
+    <div className="w-[90%] ml-[5%] mr-[5%] mt-[20px] mb-[20px] flex flex-col md:flex-row">
+      <div className="w-[100%] flex justify-center items-center flex-col">
+        <h1 className="text-4xl">Conocimientos</h1><br />
+          <p className="text-2xl bg-emerald-800 text-black border-4 border-white">Altos: Ingles, Java, html, css y javascript.</p><br />
+          <p className="text-2xl bg-emerald-400 text-black border-4 border-white">Medios: c++, sql y redes.</p><br />
+          <p className="text-2xl bg-amber-500 text-black border-4 border-white">Basicos: git, github, react, node.js, tailwind y nociones de ciberseguridad.</p>
       </div>
     </div>
   </div>
