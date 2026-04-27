@@ -18,7 +18,8 @@ function App() {
       </div>
       {/*seccion1 derecha */}
       <div className="w-[100%] md:w-[20%] flex items-center justify-center">
-    <img className="w-[300px] h-[300px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-full" src="/fotondacv.jpg" />    
+        {/*en la foto salgo matado por que en ese 15 estaba re engripado */}
+        <img className="w-[300px] h-[300px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-full" src="/fotondacv.jpg" />    
       </div>
     </div>
   </div>
