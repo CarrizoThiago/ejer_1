@@ -1,0 +1,20 @@
+function Seccion1() {
+    return (
+        <div className="w-[90%] ml-[5%] mr-[5%] mt-[20px] mb-[20px] flex flex-col md:flex-row ">
+      {/*seccion1 izquierda */}
+      <div className="w-[100%] md:w-[80%]">
+        <h1 className="text-4xl">Estudios</h1>
+          <p className="text-3xl">Soy estudiante de último año en E.E.S.T N°7 "Jose Hernandez"
+            , dentro de la modalidad de programación.<br />
+            <br /><br />A la vez me encuentro cursando 7mo año de inglés en lenguas vivas.</p>
+      </div>
+      {/*seccion1 derecha */}
+      <div className="w-[100%] md:w-[20%] flex items-center justify-center">
+        {/*en la foto salgo matado por que en ese 15 estaba re engripado */}
+       <a href="https://www.instagram.com/thiago_carri_/"><img className="w-[300px] h-[300px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-full" src="/fotondacv.jpg" />    </a>
+      </div>
+    </div>
+    );
+}
+
+export default Seccion1;
