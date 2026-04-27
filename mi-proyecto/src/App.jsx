@@ -1,10 +1,27 @@
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-blue-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Hola, Tailwind funcio
-      </h1>
+    //<div className="flex items-center justify-center h-screen bg-blue-100">
+    //contenedor
+  <div className="w-[100%] bg-[#0f172a] text-[#06B6D4] h-screen">
+    {/*titulo */}
+    <div className="w-[100%] text-[#06B6D4] flex items-center justify-center">
+      <h1 className="text-5xl ">Carrizo Ham Thiago</h1>
     </div>
+    {/*seccion1 */}
+    <div className="w-[90%] ml-[5%] mr-[5%] flex flex-col md:flex-row">
+      {/*seccion1 izquierda */}
+      <div className="w-[100%] md:w-[80%]">
+        <h1 className="text-4xl">Estudios</h1>
+          <p className="text-3xl">Soy estudiante de último año en E.E.S.T N°7 "Jose Hernandez"
+            , dentro de la modalidad de programación.<br>
+            </br> <br></br><br />A la vez me encuentro cursando 7mo año de inglés en lenguas vivas.</p>
+      </div>
+      {/*seccion1 derecha */}
+      <div className="w-[100%] md:w-[20%] flex items-center justify-center">
+    <img className="w-[300px] h-[300px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-full" src="/fotondacv.jpg" />    
+      </div>
+    </div>
+  </div>
   )
 }
 
