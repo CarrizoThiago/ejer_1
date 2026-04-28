@@ -4,6 +4,7 @@ import Seccion2 from "./Components/seccion2";
 import Seccion3 from "./Components/seccion3";
 import Footer from "./Components/footer";
 import Slide from "./Components/slide";
+import Seccion4 from "./Components/seccion4";
 
 function App() {
   
@@ -19,6 +20,8 @@ function App() {
     <Slide />
     {/*seccion3 */}
     <Seccion3 />
+    {/*seccion4 */}
+    <Seccion4 />
     <Footer />
   </div>
   )
