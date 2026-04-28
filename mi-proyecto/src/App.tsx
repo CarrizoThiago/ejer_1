@@ -3,6 +3,7 @@ import Seccion1 from "./Components/secccion1";
 import Seccion2 from "./Components/seccion2";
 import Seccion3 from "./Components/seccion3";
 import Footer from "./Components/footer";
+import Slide from "./Components/slide";
 
 function App() {
   
@@ -14,8 +15,8 @@ function App() {
     <Header />
     {/*seccion1 */}
     <Seccion1 />
-    {/*seccion2 */}
-    <Seccion2 />
+    {/*seccion2----> reemplazada por slide */}
+    <Slide />
     {/*seccion3 */}
     <Seccion3 />
     <Footer />
