@@ -1,4 +1,4 @@
-function seccion3(){
+function Section3(){
     return(
 
 
@@ -8,4 +8,4 @@ function seccion3(){
     </div>
     )
 } 
-export default seccion3;
+export default Section3;

@@ -1,4 +1,4 @@
-function Seccion4(){
+function Section4(){
     function handleSubmit(e: React.FormEvent) {
         e.preventDefault()
 
@@ -19,4 +19,4 @@ function Seccion4(){
         </div>
     )
 }
-export default Seccion4;
+export default Section4;

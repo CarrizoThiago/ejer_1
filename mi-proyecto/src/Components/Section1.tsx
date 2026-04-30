@@ -1,4 +1,4 @@
-function Seccion1() {
+function Section1() {
     return (
         <div className="w-[90%] ml-[5%] mr-[5%] mt-[20px] mb-[20px] flex flex-col md:flex-row ">
       {/*seccion1 izquierda */}
@@ -17,4 +17,4 @@ function Seccion1() {
     );
 }
 
-export default Seccion1;
+export default Section1;

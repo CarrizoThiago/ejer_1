@@ -1,10 +1,10 @@
-import Header from "./Components/header";
-import Seccion1 from "./Components/secccion1";
-import Seccion2 from "./Components/seccion2";
-import Seccion3 from "./Components/seccion3";
-import Footer from "./Components/footer";
-import Slide from "./Components/slide";
-import Seccion4 from "./Components/seccion4";
+import Header from "./Components/Header";
+import Section1 from "./Components/Section1";
+import Section2 from "./Components/Section2";
+import Section3 from "./Components/Section3";
+import Footer from "./Components/Footer";
+import Slide from "./Components/Slide";
+import Section4 from "./Components/Section4";
 
 function App() {
   
@@ -15,13 +15,13 @@ function App() {
     {/*titulo */}
     <Header />
     {/*seccion1 */}
-    <Seccion1 />
+    <Section1 />
     {/*seccion2----> reemplazada por slide */}
     <Slide />
     {/*seccion3 */}
-    <Seccion3 />
+    <Section3 />
     {/*seccion4 */}
-    <Seccion4 />
+    <Section4 />
     <Footer />
   </div>
   )

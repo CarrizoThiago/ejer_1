@@ -1,4 +1,4 @@
-function seccion2 (){
+function Section2 (){
 
 
  return (
@@ -23,4 +23,4 @@ function seccion2 (){
  )
 }
 
-export default seccion2
+export default Section2
