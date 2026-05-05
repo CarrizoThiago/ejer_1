@@ -1,10 +1,11 @@
-import Header from "./Components/Header";
+import Header from "./Components/header";
 import Section1 from "./Components/Section1";
 import Section2 from "./Components/Section2";
 import Section3 from "./Components/Section3";
-import Footer from "./Components/Footer";
-import Slide from "./Components/Slide";
+import Footer from "./Components/footer";
+import Slide from "./Components/slide";
 import Section4 from "./Components/Section4";
+import Formulario from "./Components/Formulario";
 
 function App() {
   
@@ -21,7 +22,8 @@ function App() {
     {/*seccion3 */}
     <Section3 />
     {/*seccion4 */}
-    <Section4 />
+    {/*formulario */}
+    <Formulario />
     <Footer />
   </div>
   )
