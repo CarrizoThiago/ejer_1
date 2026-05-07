@@ -1,25 +1,27 @@
 function Footer() {
     return (
         <footer className="relative mt-10">
-            <div className="h-px bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.08)] to-transparent"></div>
-            <div className="bg-gradient-to-b from-[#0a0e1a] to-[#060810] py-12 px-6">
-                <div className="max-w-4xl mx-auto">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
-                        <div className="text-center md:text-left">
-                            <h3 className="text-xl font-bold gradient-text mb-1">Carrizo Ham Thiago</h3>
-                            <p className="text-sm text-[#64748b]">Estudiante de Programación</p>
-                        </div>
-                        <div className="flex flex-col items-center md:items-end gap-3">
-                            <a href="mailto:Hamthiago08@gmail.com" className="text-sm text-[#94a3b8] hover:text-[#06d6a0] transition-colors duration-300">
-                                ✉ Hamthiago08@gmail.com
-                            </a>
-                            <a href="mailto:Carrizo.Ham@tecnica7.edu.ar" className="text-sm text-[#94a3b8] hover:text-[#4361ee] transition-colors duration-300">
-                                🏫 Carrizo.Ham@tecnica7.edu.ar
-                            </a>
-                        </div>
+            <div style={{ height: '1px', background: 'linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent)' }}></div>
+            <div style={{ background: 'linear-gradient(to bottom, #0a0e1a, #060810)', padding: '48px 24px' }}>
+                <div style={{ maxWidth: '896px', margin: '0 auto', textAlign: 'center' }}>
+                    <div style={{ marginBottom: '32px' }}>
+                        <h3 className="text-xl font-bold gradient-text" style={{ marginBottom: '4px' }}>Carrizo Ham Thiago</h3>
+                        <p style={{ fontSize: '14px', color: '#64748b' }}>Estudiante de Programación</p>
                     </div>
-                    <div className="h-px bg-[rgba(255,255,255,0.06)] mb-6"></div>
-                    <p className="text-center text-xs text-[#475569]">© 2026 Carrizo Ham Thiago. Todos los derechos reservados.</p>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', marginBottom: '32px' }}>
+                        <a href="mailto:Hamthiago08@gmail.com" style={{ fontSize: '14px', color: '#94a3b8', textDecoration: 'none', transition: 'color 0.3s' }}
+                           onMouseEnter={(e) => (e.currentTarget.style.color = '#06d6a0')}
+                           onMouseLeave={(e) => (e.currentTarget.style.color = '#94a3b8')}>
+                            ✉ Hamthiago08@gmail.com
+                        </a>
+                        <a href="mailto:Carrizo.Ham@tecnica7.edu.ar" style={{ fontSize: '14px', color: '#94a3b8', textDecoration: 'none', transition: 'color 0.3s' }}
+                           onMouseEnter={(e) => (e.currentTarget.style.color = '#4361ee')}
+                           onMouseLeave={(e) => (e.currentTarget.style.color = '#94a3b8')}>
+                            🏫 Carrizo.Ham@tecnica7.edu.ar
+                        </a>
+                    </div>
+                    <div style={{ height: '1px', background: 'rgba(255,255,255,0.06)', marginBottom: '24px' }}></div>
+                    <p style={{ fontSize: '12px', color: '#475569' }}>© 2026 Carrizo Ham Thiago. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>

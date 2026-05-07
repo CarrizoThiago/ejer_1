@@ -24,22 +24,24 @@ function Section3() {
         <section className="relative py-16 md:py-20">
             <div className="bg-orb w-[350px] h-[350px] bg-[#f72585] bottom-0 right-0 absolute"></div>
 
-            <div className="relative z-10 w-[90%] mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#f8fafc] animate-fade-in">
-                    Experiencia
-                </h2>
-                <div className="section-divider"></div>
-                <p className="text-[#94a3b8] text-base md:text-lg mb-10 max-w-2xl">
-                    Proyectos realizados en el marco de las exposiciones de la escuela.
-                    Para referencias, consultar a Yessica Martinez.
-                </p>
+            <div className="relative z-10" style={{ width: '90%', maxWidth: '1152px', margin: '0 auto' }}>
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#f8fafc] animate-fade-in">
+                        Experiencia
+                    </h2>
+                    <div className="section-divider mx-auto"></div>
+                    <p className="text-[#94a3b8] text-base md:text-lg max-w-2xl mx-auto">
+                        Proyectos realizados en el marco de las exposiciones de la escuela.
+                        Para referencias, consultar a Yessica Martinez.
+                    </p>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {proyectos.map((p, i) => (
                         <div
                             key={i}
                             className="glass-card p-6 group animate-slide-up"
-                            style={{ animationDelay: `${i * 0.15}s` }}
+                            style={{ animationDelay: `${i * 0.15}s`, textAlign: 'center' }}
                         >
                             {/* Tech badge */}
                             <span
@@ -64,7 +66,7 @@ function Section3() {
                             {/* Bottom accent line */}
                             <div
                                 className="mt-5 h-[2px] w-0 group-hover:w-full transition-all duration-500 rounded-full"
-                                style={{ background: p.color }}
+                                style={{ background: p.color, margin: '20px auto 0 auto' }}
                             ></div>
                         </div>
                     ))}

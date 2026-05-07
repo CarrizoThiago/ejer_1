@@ -1,6 +1,6 @@
 function Section1() {
     return (
-        <section className="relative w-[90%] mx-auto py-16 md:py-20">
+        <section className="relative py-16 md:py-20" style={{ width: '90%', maxWidth: '1152px', margin: '0 auto' }}>
             <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
                 {/* Left - Text content */}
                 <div className="flex-1 animate-slide-in-left">

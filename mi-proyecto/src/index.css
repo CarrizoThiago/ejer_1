@@ -193,7 +193,7 @@ body {
   height: 4px;
   background: linear-gradient(90deg, #06d6a0, #4361ee);
   border-radius: 2px;
-  margin: 12px 0 24px 0;
+  margin: 12px auto 24px auto;
 }
 
 /* ═══════════════ SKILL BADGE ═══════════════ */
