@@ -2,8 +2,8 @@ function Section2 (){
 
 
  return (
-    <section className="relative py-16 md:py-20 overflow-hidden">
-      <div className="w-[90%] mx-auto flex flex-col md:flex-row justify-center items-center gap-6">
+    <section className="relative w-full py-16 md:py-20 flex justify-center">
+      <div className="w-full max-w-6xl px-4 flex flex-col md:flex-row justify-center items-center gap-6">
         <div className="w-full md:w-[20%] flex justify-center">
           <img className="w-[150px] h-[150px] rounded-full" src="/logojava.jpg" alt="Java" />
         </div>

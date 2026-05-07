@@ -9,11 +9,13 @@ function App() {
   return (
     <div className="relative min-h-screen bg-[#0a0e1a] text-[#e2e8f0] font-['Inter']">
       {/* Global background orbs */}
-      <div className="bg-orb w-[600px] h-[600px] bg-[#4361ee] top-[10%] right-[-200px] fixed"></div>
-      <div className="bg-orb w-[500px] h-[500px] bg-[#06d6a0] bottom-[20%] left-[-200px] fixed"></div>
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="bg-orb w-[600px] h-[600px] bg-[#4361ee] top-[10%] right-[-200px] absolute"></div>
+        <div className="bg-orb w-[500px] h-[500px] bg-[#06d6a0] bottom-[20%] left-[-200px] absolute"></div>
+      </div>
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 w-full">
         <Header />
         <Section1 />
         <Slide />

@@ -19,12 +19,12 @@ function Header() {
                 </h1>
 
                 {/* Subtitle */}
-                <p className="mt-4 text-lg md:text-xl text-[#94a3b8] text-center animate-fade-in max-w-xl" style={{ animationDelay: '0.2s' }}>
+                <p className="mt-4 text-lg md:text-xl text-[#94a3b8] text-center animate-fade-in delay-200 max-w-xl">
                     Estudiante de Programación · Desarrollador en formación
                 </p>
 
                 {/* Decorative line */}
-                <div className="mt-8 w-24 h-[2px] bg-gradient-to-r from-transparent via-[#06d6a0] to-transparent animate-fade-in" style={{ animationDelay: '0.4s' }}></div>
+                <div className="mt-8 w-24 h-[2px] bg-gradient-to-r from-transparent via-[#06d6a0] to-transparent animate-fade-in delay-300"></div>
             </div>
 
             {/* Bottom border fade */}

@@ -48,11 +48,13 @@ const Formulario = () => {
   };
 
   return (
-    <section className="relative py-16 md:py-20 overflow-hidden">
-      <div className="bg-orb w-[400px] h-[400px] bg-[#06d6a0] top-[20%] left-[-100px] absolute"></div>
-      <div className="bg-orb w-[300px] h-[300px] bg-[#4361ee] bottom-[10%] right-[-50px] absolute"></div>
+    <section className="relative w-full py-16 md:py-20 flex justify-center">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="bg-orb w-[400px] h-[400px] bg-[#06d6a0] top-[20%] left-[-100px] absolute"></div>
+        <div className="bg-orb w-[300px] h-[300px] bg-[#4361ee] bottom-[10%] right-[-50px] absolute"></div>
+      </div>
 
-      <div className="relative z-10" style={{ width: '90%', maxWidth: '768px', margin: '0 auto' }}>
+      <div className="relative z-10 w-full max-w-3xl px-4">
         {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#f8fafc] animate-fade-in">

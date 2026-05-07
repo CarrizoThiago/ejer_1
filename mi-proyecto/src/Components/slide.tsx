@@ -26,11 +26,13 @@ function Slide() {
     }, []);
 
     return (
-        <section className="relative py-16 md:py-20 overflow-hidden">
+        <section className="relative w-full py-16 md:py-20 flex justify-center">
             {/* Background orb */}
-            <div className="bg-orb w-[400px] h-[400px] bg-[#4361ee] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute"></div>
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="bg-orb w-[400px] h-[400px] bg-[#4361ee] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute"></div>
+            </div>
 
-            <div className="relative z-10" style={{ width: '90%', maxWidth: '1152px', margin: '0 auto' }}>
+            <div className="relative z-10 w-full max-w-6xl px-4">
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#f8fafc] animate-fade-in">
@@ -43,12 +45,12 @@ function Slide() {
                 </div>
 
                 {/* Slide container */}
-                <div className="glass-card p-6 md:p-10" style={{ maxWidth: '896px', margin: '0 auto' }}>
+                <div className="glass-card p-6 md:p-10 max-w-4xl mx-auto">
                     <div className="flex items-center justify-center gap-4 md:gap-8 flex-wrap">
-                        {[0, 1, 2, 3, 4].map((offset) => {
+                        {['', 'delay-100', 'delay-200', 'delay-300', 'delay-500'].map((delayClass, offset) => {
                             const i = (indice + offset) % ima.length;
                             return (
-                                <div key={offset} className="flex flex-col items-center gap-3 animate-fade-in" style={{ animationDelay: `${offset * 0.1}s` }}>
+                                <div key={offset} className={`flex flex-col items-center gap-3 animate-fade-in ${delayClass}`}>
                                     <div className="slide-img-container">
                                         <img src={ima[i]} alt={labels[i]} />
                                     </div>
