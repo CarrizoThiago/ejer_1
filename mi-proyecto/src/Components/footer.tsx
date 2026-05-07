@@ -10,13 +10,13 @@ function Footer() {
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', marginBottom: '32px' }}>
                         <a href="mailto:Hamthiago08@gmail.com" style={{ fontSize: '14px', color: '#94a3b8', textDecoration: 'none', transition: 'color 0.3s' }}
-                           onMouseEnter={(e) => (e.currentTarget.style.color = '#06d6a0')}
-                           onMouseLeave={(e) => (e.currentTarget.style.color = '#94a3b8')}>
+                            onMouseEnter={(e) => (e.currentTarget.style.color = '#06d6a0')}
+                            onMouseLeave={(e) => (e.currentTarget.style.color = '#94a3b8')}>
                             ✉ Hamthiago08@gmail.com
                         </a>
                         <a href="mailto:Carrizo.Ham@tecnica7.edu.ar" style={{ fontSize: '14px', color: '#94a3b8', textDecoration: 'none', transition: 'color 0.3s' }}
-                           onMouseEnter={(e) => (e.currentTarget.style.color = '#4361ee')}
-                           onMouseLeave={(e) => (e.currentTarget.style.color = '#94a3b8')}>
+                            onMouseEnter={(e) => (e.currentTarget.style.color = '#4361ee')}
+                            onMouseLeave={(e) => (e.currentTarget.style.color = '#94a3b8')}>
                             🏫 Carrizo.Ham@tecnica7.edu.ar
                         </a>
                     </div>

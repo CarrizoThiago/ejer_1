@@ -59,45 +59,6 @@ function Slide() {
                     </div>
                 </div>
 
-                {/* Skill levels */}
-                <div className="mt-10 flex flex-col md:flex-row gap-4 md:gap-6" style={{ maxWidth: '896px', margin: '40px auto 0 auto' }}>
-                    {/* Alto */}
-                    <div className="glass-card p-5 flex-1" style={{ textAlign: 'center' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '12px' }}>
-                            <div className="w-2.5 h-2.5 rounded-full bg-[#06d6a0]"></div>
-                            <span className="text-sm font-semibold text-[#06d6a0] uppercase tracking-wider">Alto</span>
-                        </div>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
-                            {["Inglés", "Java", "HTML", "CSS", "JavaScript"].map((s) => (
-                                <span key={s} className="skill-badge high">{s}</span>
-                            ))}
-                        </div>
-                    </div>
-                    {/* Medio */}
-                    <div className="glass-card p-5 flex-1" style={{ textAlign: 'center' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '12px' }}>
-                            <div className="w-2.5 h-2.5 rounded-full bg-[#4cc9f0]"></div>
-                            <span className="text-sm font-semibold text-[#4cc9f0] uppercase tracking-wider">Medio</span>
-                        </div>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
-                            {["C++", "SQL", "Redes"].map((s) => (
-                                <span key={s} className="skill-badge mid">{s}</span>
-                            ))}
-                        </div>
-                    </div>
-                    {/* Básico */}
-                    <div className="glass-card p-5 flex-1" style={{ textAlign: 'center' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '12px' }}>
-                            <div className="w-2.5 h-2.5 rounded-full bg-[#f9a8d4]"></div>
-                            <span className="text-sm font-semibold text-[#f9a8d4] uppercase tracking-wider">Básico</span>
-                        </div>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
-                            {["Git", "GitHub", "React", "Node.js", "Tailwind", "Ciberseguridad"].map((s) => (
-                                <span key={s} className="skill-badge low">{s}</span>
-                            ))}
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     );
