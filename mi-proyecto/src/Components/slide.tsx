@@ -27,11 +27,6 @@ function Slide() {
 
     return (
         <section className="relative w-full py-16 md:py-20 flex justify-center">
-            {/* Background orb */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="bg-orb w-[400px] h-[400px] bg-[#4361ee] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute"></div>
-            </div>
-
             <div className="relative z-10 w-full max-w-6xl px-4">
                 {/* Header */}
                 <div className="text-center mb-12">

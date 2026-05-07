@@ -25,7 +25,7 @@ function Section3() {
         {
             titulo: "Juego Dungeon",
             tech: "Java",
-            desc: "Juego tipo dungeon crawler con generación de salas.",
+            desc: "Juego tipo dungeon/laberinto con salas con torretas y llaves.",
             color: "#f72585",
             badgeText: "text-[#f72585]",
             badgeBg: "bg-[#f725851a]",
@@ -36,20 +36,15 @@ function Section3() {
     ];
 
     return (
-        <section className="relative w-full py-16 md:py-20 flex justify-center">
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="bg-orb w-[350px] h-[350px] bg-[#f72585] bottom-0 right-0 absolute"></div>
-            </div>
-
+        <section className="relative w-full py-16 md:py-20 flex flex-col items-center">
             <div className="relative z-10 w-full max-w-6xl px-4">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#f8fafc] animate-fade-in">
                         Experiencia
                     </h2>
                     <div className="section-divider mx-auto"></div>
-                    <p className="text-[#94a3b8] text-base md:text-lg max-w-2xl mx-auto">
-                        Proyectos realizados en el marco de las exposiciones de la escuela.
-                        Para referencias, consultar a Yessica Martinez.
+                    <p className="text-[#94a3b8] text-base md:text-lg max-w-2xl mx-auto text-center">
+                        Proyectos realizados en el marco de las exposiciones de la escuela.Para referencias, consultar a Yessica Martinez.
                     </p>
                 </div>
 

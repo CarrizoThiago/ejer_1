@@ -3,10 +3,6 @@ function Header() {
         <header className="relative w-full overflow-hidden">
             {/* Background gradient */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#0a0e1a] via-[#111827] to-[#0a0e1a]"></div>
-            {/* Decorative orbs */}
-            <div className="bg-orb w-[300px] h-[300px] bg-[#06d6a0] top-[-100px] left-[-50px] absolute"></div>
-            <div className="bg-orb w-[250px] h-[250px] bg-[#4361ee] top-[-80px] right-[-30px] absolute"></div>
-
             <div className="relative z-10 flex flex-col items-center justify-center py-16 md:py-24 px-6">
                 {/* Small label */}
                 <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-[#94a3b8] mb-4 animate-fade-in">

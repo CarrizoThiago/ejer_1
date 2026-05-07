@@ -354,3 +354,11 @@ body {
     border-radius: 22px;
   }
 }
+
+p {
+  margin-inline: auto;
+}
+
+div {
+  margin-inline: auto;
+}

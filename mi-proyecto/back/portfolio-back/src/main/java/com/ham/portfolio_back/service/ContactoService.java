@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class ContactoService {
 
     private JavaMailSender javaMailSender;
-
+/*papu cuando puedas separa los 2 mails en 2 funciones asi es mas legible papuuu */
     public void enviarMail(ContactoDto contactoDto) {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
 
@@ -26,5 +26,11 @@ public class ContactoService {
         mailMessage.setText(cuerpo);
 
         javaMailSender.send(mailMessage);
+
+        SimpleMailMessage mailMessage2 = new SimpleMailMessage();
+        mailMessage2.setTo(contactoDto.getEmail());
+        mailMessage2.setSubject("Confirmación de recibimiento");
+        mailMessage2.setText("Gracias por tu mensaje, ya lo hemos recibido.");
+        javaMailSender.send(mailMessage2);
     }
 }
