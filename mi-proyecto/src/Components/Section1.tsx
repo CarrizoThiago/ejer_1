@@ -1,19 +1,56 @@
 function Section1() {
     return (
-        <div className="w-[90%] ml-[5%] mr-[5%] mt-[20px] mb-[20px] flex flex-col md:flex-row ">
-      {/*seccion1 izquierda */}
-      <div className="w-[100%] md:w-[80%]">
-        <h1 className="text-4xl">Estudios</h1>
-          <p className="text-3xl">Soy estudiante de último año en E.E.S.T N°7 "Jose Hernandez"
-            , dentro de la modalidad de programación.<br />
-            <br /><br />A la vez me encuentro cursando 7mo año de inglés en lenguas vivas.</p>
-      </div>
-      {/*seccion1 derecha */}
-      <div className="w-[100%] md:w-[20%] flex items-center justify-center">
-        {/*en la foto salgo matado por que en ese 15 estaba re engripado */}
-       <a href="https://www.instagram.com/thiago_carri_/"><img className="w-[300px] h-[300px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-full" src="/fotondacv.jpg" />    </a>
-      </div>
-    </div>
+        <section className="relative w-[90%] mx-auto py-16 md:py-20">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
+                {/* Left - Text content */}
+                <div className="flex-1 animate-slide-in-left">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#f8fafc]">
+                        Estudios
+                    </h2>
+                    <div className="section-divider"></div>
+                    <div className="glass-card p-6 md:p-8">
+                        <p className="text-base md:text-lg leading-relaxed text-[#94a3b8]">
+                            Soy estudiante de último año en{" "}
+                            <span className="text-[#06d6a0] font-semibold">
+                                E.E.S.T N°7 "Jose Hernandez"
+                            </span>
+                            , dentro de la modalidad de programación.
+                        </p>
+                        <div className="mt-6 pt-6 border-t border-[rgba(255,255,255,0.06)]">
+                            <p className="text-base md:text-lg leading-relaxed text-[#94a3b8]">
+                                A la vez me encuentro cursando{" "}
+                                <span className="text-[#4cc9f0] font-semibold">
+                                    7mo año de inglés
+                                </span>{" "}
+                                en lenguas vivas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Right - Photo */}
+                <div className="animate-slide-in-right">
+                    <a
+                        href="https://www.instagram.com/thiago_carri_/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block group"
+                    >
+                        <div className="relative">
+                            {/* Glow ring */}
+                            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#06d6a0] via-[#4361ee] to-[#f72585] p-[3px] animate-glow-pulse">
+                                <div className="w-full h-full rounded-full bg-[#0a0e1a]"></div>
+                            </div>
+                            <img
+                                className="relative z-10 w-[200px] h-[200px] md:w-[220px] md:h-[220px] lg:w-[260px] lg:h-[260px] rounded-full object-cover border-[3px] border-transparent group-hover:scale-105 transition-transform duration-500"
+                                src="/fotondacv.jpg"
+                                alt="Carrizo Ham Thiago"
+                            />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     );
 }
 
